@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Felipe Souza de Lima</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/fontawesome-free-6.7 (2).2-web/css/all.min.css">
+    <link rel="stylesheet" href="navbar.js">
+    <link rel="icon" type="image/png" href="imagens/J.png" >
+</head>
+<body>
+    <header>
+        <section class="logo_navbar">
+            <div class="logo"><img src="imagens/J.png" alt="Logo"></div>
+            <!-- Menu que será exibido ao clicar -->
+            <nav class="navbar">
+                <a href="#sobre_mim">Sobre mim</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#tec">Tecnologias</a>
+                <a href="#pro">Projetos</a>
+                <a href="#esco">Formação</a>
+                <!--<a href="#Curriculo">Curriculo</a>-->
+            </nav>
+        </section>
+        <section class="contatos_navegacao">
+            <!-- Contatos -->
+            <div class="contatos_navbar">
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-felipe-souza-796313360/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/joaofelipe_jfdev?igsh=aWwwMm55MGJ0NXN3"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/JoaoFelipeSL"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <!-- Menu de navegação -->
+            <div class="hamburguer" id="hamburguer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </section>
+        <script src="header.js"></script>
+    </header>
+   
+    <main>
+        <section class="hero">
+                <div class="info_hero">
+                    <div class="text_hero">
+                        <h1>João Felipe</h1>
+                        <h3>Desenvolvedor de Software</h3>
+                    </div>
+                    <img class="saltando" src="imagens/saltando.png" alt="">
+                    <a href="#arte-section"><button id="conhecer-btn">Conhecer</button> </a>
+                </div>
+                <picture class="imagem_hero">
+                    <source media="(max-width: 480px)" srcset="imagens/avatares.png">
+                    <img src="imagens/felipe_hero.png" alt="Imagem do Felipe">
+                </picture>
+        </section>
+        <section class="Arte" id="arte-section">
+            <img src="imagens/J.png" alt="">
+            <h1 id="welcome-message">Seja bem vindo!</h1>
+        </section>
+        <!-- Link para o arquivo JavaScript externo -->
+        <script src="escritor.js"></script>
+        <section class="sobre_mim" id="sobre_mim">
+            <div class="info_sobreMim">
+                <h1>Quem sou eu?</h1>
+                <p>Me chamo João Felipe, sou formado em Técnico de Informática pelo IFRN-Ceará-Mirim. Tenho uma forte habilidade em criatividade e persistência na resolução de problemas, sempre buscando soluções inovadoras e eficientes para os desafios que encontro.</p>
+            </div>
+            <div class="slider">
+                <img src="imagens/HAN_4181.jpg" class="active" alt="Minha Foto 1">
+                <img src="imagens/HAN_4172.jpg" alt="Minha Foto 2">
+                <img src="imagens/HAN_4184.jpg" alt="Minha Foto 3">
+            </div>
+        </section>
+        <script src="slide.js"></script>
+        <section class="servicos" id="servicos">
+            <div class="cards">
+                <div class="card">
+                    <h1>Web sites</h1>
+                    <i class="fa-solid fa-pager"></i>
+                    <p class="descricao" id="descricao-websites">Desenvolvo web sites, desde o design a linha de código.</p>
+                    <button class="toggle-btn" onclick="mostrarMais('websites')">Saber mais</button>
+                </div>
+                <div class="card">
+                    <h1>Sistemas</h1>
+                    <i class="fa-solid fa-gears"></i>
+                    <p class="descricao" id="descricao-sistemas">Desenvolvo sistemas comerciais.</p>
+                    <button class="toggle-btn" onclick="mostrarMais('sistemas')">Saber mais</button>
+                </div>
+                <div class="card">
+                    <h1>Data base</h1>
+                    <i class="fa-solid fa-database"></i>
+                    <p class="descricao" id="descricao-database">Trabalho com manipulação de dados em banco de dados.</p>
+                    <button class="toggle-btn" onclick="mostrarMais('database')">Saber mais</button>
+                </div>
+            </div> 
+        </section>
+        <script src="card_servicos.js"></script>
+        <section class="Tecnologias" id="tec">
+            <h1>Habilidades</h1>
+            <div class="cards_tecnologias">
+                <div class="card">
+                        <i class="fa-brands fa-html5"></i>
+                    <h1>HTML</h1>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h1>CSS</h1>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-js"></i>
+                    <h1>JavaScript</h1>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-python"></i>
+                    <h1>Python</h1>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-database"></i>
+                    <h1>SQL</h1>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-figma"></i>
+                    <h1>Figma</h1>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-react"></i>
+                    <h1>React</h1>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-docker"></i>
+                    <h1>Docker</h1>
+                </div>
+            </div>
+        </section>
+        <section class="Projetos" id="pro">
+            <h1>Projetos</h1>
+            <div class="carousel-container">
+                <button class="arrow left" onclick="moveCarousel(-1)">&#10094;</button>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-item" onclick="toggleImage(this)">
+                            <img src="imagens/napneTelaLogin.png" alt="Imagem 1A" class="active">
+                            <img src="imagens/enapnePrincipal.png" alt="Imagem 1B" class="hidden">
+                            <div class="description">eNAPNE: Sistema desenvolvido para atender às demandas do setor do NAPNE do IFRN Ceará-Mirim. O sistema tem como objetivo facilitar o acompanhamento de alunos com necessidades específicas, gerenciando o preenchimento do Plano Educacional Individualizado (PEI).</div>
+                            <div class="icon">
+                                <i class="fa-solid fa-hand-point-up"></i>
+                            </div>
+                        </div>
+                        <div class="carousel-item" onclick="toggleImage(this)">
+                            <img src="imagens/Captura de tela de 2025-03-27 19-10-10.png" alt="Imagem 2A" class="active">
+                            <img src="imagens/Captura de tela de 2025-03-27 19-10-52.png" alt="Imagem 2B" class="hidden">
+                            <div class="description">BlushGlamour: Sistema desenvolvido para simular uma loja virtual de maquiagem. O sistema conta com o gerenciamento de estoque dos produtos ofertados, além de simular as operações de compra e venda.</div>
+                            <div class="icon">
+                                <i class="fa-solid fa-hand-point-up"></i>
+                            </div>
+                        </div>
+                        <div class="carousel-item" onclick="toggleImage(this)">
+                            <img src="imagens/emeregencIAcarrosel1.png" alt="Imagem 3A" class="active">
+                            <img src="imagens/emergencIAcarrossel2.png" alt="Imagem 3B" class="hidden">
+                            <div class="description">O EmergencIA: é um chatbot desenvolvido para auxiliar a segurança pública. O sistema conta com um chatbot no Telegram, além de agentes de inteligência artificial treinados para essa função.</div>
+                            <div class="icon">
+                                <i class="fa-solid fa-hand-point-up"></i>
+                            </div>
+                        </div>
+                        <div class="carousel-item" onclick="toggleImage(this)">
+                            <img src="imagens/gimakes.png" alt="Imagem 4A" class="active">
+                            <img src="imagens/gimakes2.png" alt="Imagem 4B" class="hidden">
+                            <div class="description">Gimakes: Site pessoal da maquiadora e hairstylist Giovanna Ingrid. Desenvolvido com o objetivo de divulgar seu trabalho, transmite delicadeza e elegância, refletindo sua identidade e estilo em cada detalhe.
+                            </div>
+                            <div class="icon">
+                                <i class="fa-solid fa-hand-point-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="arrow right" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+            <script src="carrosselProjetos.js"></script>
+        </section>
+        <section class="escolaridade" id="esco">
+            <h1>Técnico em informática</h1>
+            <div class="text_certificado">
+                <div class="text_info">
+                    <p>Fui aluno do IFRN – Campus Ceará-Mirim, na turma de 2021.1, e foi lá que conheci a informática e o mundo da programação. Não demorou muito para me apaixonar pelas linhas de código e me identificar cada vez mais com a área.
+
+                        Durante os quatro anos de curso, adquiri diversas experiências, desenvolvi vários sites e sistemas e, no meu último ano como aluno, tive a oportunidade de criar um projeto especial para a comunidade do IFCM: o eNAPNE.
+                        
+                        Em 2024, concluí minha formação e me tornei técnico em informática.</p>
+                </div>
+                <div class="certificado">
+                    <img class="image" src="imagens/certificado_If.png" alt="">
+                </div>
+            </div>
+        <script src="certificado.js"></script>
+        </section>
+        <section class="certificados">
+            <div class="container">
+                <div class="text-box">
+                    <h2>Certificados</h2>
+                    <p>Alguns dos certificas que adquiri como técnico em imformática.</p>
+                </div>
+                <div class="accordion">
+                    <div class="panel" style="background-image: url('imagens/net1.png');"></div>
+                    <div class="panel" style="background-image: url('imagens/net2.png');"></div>
+                    <div class="panel" style="background-image: url('imagens/linux.png');"></div>
+                    <div class="panel" style="background-image: url('imagens/certicado_hackaton.jpeg');"></div>
+                    <div class="panel" style="background-image: url('https://source.unsplash.com/600x400/?city');"></div>
+                </div>
+            </div>
+        <script src="arcodeon.js"></script>
+        </section>
+    </main>
+<script src="ocultar_section.js"></script>
+</body>
+</html>
